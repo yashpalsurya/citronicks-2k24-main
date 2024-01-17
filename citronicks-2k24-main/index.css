@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  min-height: 100vh; 
+  width: 100%;
+  background-color: rgba(65, 221, 38, 0.037);
+}
+
+#nav {
+  width: 100%;
+  height: 100px;
+  background-color: whitesmoke;
+  height: auto;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 4vw;
+  border-bottom: 2px solid black;
+}
+
+#nav a {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 15px;
+  color: black;
+}
+
+#nav #imgg img {
+  height: 50px; 
+  width: auto; 
+}
+
+#nav #link {
+  display: flex;
+  gap: 10px; 
+}
+
+#nav h1 {
+  font-size: 25px;
+}
+
+#nav h1 span {
+  font-size: 18px; 
+  font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  #nav {
+    height: auto; 
+    justify-content: center; 
+    text-align: center; 
+  }
+
+  #nav #link {
+    flex-direction: column; 
+    gap: 5px; 
+  }
+
+  #nav a {
+    margin-bottom: 5px; 
+  }
+}
+
+
+#new {
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+}
+
+#herol {
+  width: 100%; 
+}
+
+#herol p {
+  font-size: 16px; 
+  padding: 20px; 
+  text-transform: uppercase;
+
+}
+#herol button {
+  margin-left: 10px; 
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+
+#herol h1 {
+  padding: 20px; 
+  margin-top: 5vh;
+  font-size: 5vw; 
+  text-transform: uppercase;
+}
+
+#heror img {
+  margin: 10px; 
+  width: 90%; 
+  height: 80%; 
+}
+
+#heror {
+  width: 100%; 
+}
+
+@media screen and (min-width: 768px) {
+  #new {
+    flex-direction: row;
+  }
+
+  #herol {
+    width: 50%;
+  }
+
+  #heror {
+    width: 50%;
+  }
+}
+
+#hero-2 {
+  width: 100%;
+  height: auto; 
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+#part1, #part2, #part3 {
+  width: 100%; 
+  height: auto; 
+  padding: 20px; 
+  box-sizing: border-box;
+}
+
+.card {
+  max-width: 100%; 
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.event-title {
+  font-size: 20px; 
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-description {
+  font-size: 14px; 
+  color: #555;
+}
+
+@media screen and (min-width: 768px) {
+  #part1, #part2, #part3 {
+    width: 33.3%; 
+    box-sizing: border-box;
+  }
+}
